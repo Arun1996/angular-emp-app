@@ -1,0 +1,93 @@
+
+<div class="container color-dark">
+  <div class="col">
+    <h1>Emp Details</h1>
+  </div>
+  <div class="col">
+    <h1>Emp List</h1>
+  </div>
+  
+</div>
+
+
+<div class="container color-light">
+  <div class="col" >
+    
+
+    <form >
+          <input type="text" class="txt" placeholder="first name" [(ngModel)]="name" name="name">
+          <input type="text" class="txt" placeholder="last name" [(ngModel)]="lastname" name="lastname">
+          <input type="text" class="txt" placeholder="project" [(ngModel)]="project" name="project">
+          <input type="submit" class="btn" placeholder="project" (click)="additem()">
+          <input type="button" class="btn" value="Reset" (click)="Reset()">
+    </form>
+  </div>
+  <div class="col">
+   <!-- 
+   <p class="life-container" *ngFor = "let emp of emplist; let i = index" (click)="removeEmp(i)">
+      {{ emp }}-->
+    <p class="life-container" *ngFor="let emp of user.EMPLY ; let i = index"  (click)="editItem3(emp)">
+      <b>{{emp.fname}}&nbsp;
+      {{emp.lname}}</b> - <i>{{emp.projec}}</i>&nbsp;
+      <input type="button" class="btn1"  value="edit" (click)="editItem(emp)">&nbsp;
+      <input type="button" class="btn1"  value="delete"  (click)="removeEmp(i)">
+    </p>
+
+   
+  </div>
+</div>
+
+
+
+
+
+
+<!--
+<div style="padding-top: 10px">
+  <label>First Name:
+    <input type="text" placeholder="first name" [(ngModel)]="name" name="name">
+  </label>
+</div>
+
+
+
+<div style="padding-top: 10px">
+  <label>Last Name:
+    <input type="text" placeholder="last name" [(ngModel)]="lastname" name="lastname">
+  </label>
+</div>
+
+<div style="padding-top: 10px">
+  <label>Project:
+    <input type="text" placeholder="project" [(ngModel)]="project" name="project">
+  </label>
+</div>
+
+<div style="padding-top: 10px">
+  <label>
+    <input type="submit" placeholder="project" (click)="additem()">
+  </label>
+</div>
+
+
+<ul *ngFor="let emp of user.EMPLY">
+<p >{{emp.fname}}&nbsp;
+{{emp.lname}}<br>
+{{emp.projec}}
+{{emp.dbutton}}
+</p>
+</ul>
+
+-->
+
+
+
+
+
+
+<!--<ul class="emply">
+  <li *ngFor="let emp of emply">
+    <span class="badge">{{emp.fname}} {{emp.lname}}</span>{{emp.project}}
+  </li>
+</ul>-->
+

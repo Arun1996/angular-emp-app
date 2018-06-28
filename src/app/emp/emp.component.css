@@ -1,0 +1,50 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+.col {
+    padding: .4em 1.3em;
+}
+.color-dark {
+    background: #2885C4;
+}
+.color-light {
+    background: #57B3F1;
+}
+input.txt {
+    border: 0;
+    padding: 1em;
+    width: 80%;
+    margin-bottom: 2em;
+    margin-right: 20%;
+}
+input.btn {
+    border: 0px;
+    display:inline;
+    padding:1em 3em;
+    background:#A5F883;
+    color:#003A61;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor:pointer;   
+    
+}
+.life-container {
+    background:#3FA0E1;
+    padding:.5em;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+input.btn1 {
+    border: 0;
+    
+    padding:.3em .2em;
+    background:#A5F883;
+    color:#003A61;
+    cursor:pointer;
+    outline: none;
+    border: none;
+    border-radius:10px; 
+   
+}
